@@ -9,10 +9,154 @@ body {
 a {
     color: #000;
 }
+a {
+    color: #000;
+    text-decoration: none;
+}
 
-/* Header */
+nav ul {
+    list-style-type: none;
+}
 
-/* Section Hébergements */
+section img {
+    object-fit: cover;
+}
+
+/********** Header **********/
+header {
+    margin: auto;
+    width: 85%;
+    display: flex;
+    justify-content: space-between;    
+}
+
+/********** Header/menu de navigation **********/
+nav ul {
+    display: flex;
+}
+
+nav li {
+    margin-right: 80px;
+    font-size: 1.1em;
+}
+
+.navsubs {
+    color: #0065FC;
+    font-weight: bold;
+    font-size: 1.1em;
+}
+
+/********** Header/ Animations du menu de navigation **********/
+.navacte:hover, .navhbgt:hover {
+    border-top: 3px solid #0065FC;
+    padding-top: 25px;
+}
+
+/********** Section 1: titre et barre de recherche **********/
+
+/********** Éléments de la section **********/
+
+.searchbarsection {
+    margin: auto;
+    width: 85%;
+}
+
+/********** Barre de recherche **********/
+.fa-map-marker-alt {
+    padding: 10.5px;
+    background-color: #EAEAEA;
+    border-radius: 8px 0 0 8px;
+}
+
+input {
+    padding: 10px;
+    border: 1px solid #EAEAEA;
+    margin-right: -4px;
+}
+
+::placeholder {
+    color:black;
+    font-family: "Raleway";
+    font-weight: bold;
+}
+
+.bouton_search, .btnsearch_mobile {
+    color: #FFFFFF;
+    font-weight: bold;
+    padding: 9px 13px 8px 13px;
+    border-radius: 0 8px 8px 0;
+    background-color: #3498DB;
+    border-bottom: 2px solid #0065FC;
+    text-shadow: 0px -2px #0065FC;
+    transition: all 0.1s;
+    -webkit-transition: all 0.1s;
+}
+
+.bouton_search:active, .btnsearch_mobile:active {
+    transform: translate(0px,5px);
+    -webkit-transform: translate(0px,5px);
+    border-bottom: 1px solid;
+}
+ 
+/********** Section 2: Filtres **********/
+
+/********** Éléments de la section **********/
+
+.filterscategory {
+    margin: auto;
+    width: 85%;
+}
+
+/********** Boutons filtres **********/
+
+.filterscategorytitle {
+    padding-top: 10px;
+}
+
+.filterscategory {
+    width: 85%;
+    display: flex;
+    margin-top: 15px;
+}
+
+.filterscategory a {
+    font-weight: bold;
+    font-size: 0.9em;
+}
+
+.filterscategory ul {
+    display: flex;
+}
+
+.filterscategory li {
+    list-style-type: none;
+    margin-left: 30px;
+}
+
+.filters {
+    display: flex;
+    align-items: center;
+    border: 2px solid #EAEAEA;
+    border-radius: 50px;
+}
+
+.filters p {
+    padding: 0 15px 0 10px;
+    font-size: 1em;
+}
+
+.iconfilters {
+    color: #0065FC;
+    background-color: #DEEBFF;
+    padding: 15px;
+    margin-right: 7px;
+    margin-left: -5px;
+    border-radius: 50px;
+}
+
+.fa-child {
+    padding: 15px 17px 15px 17px;
+}
 
 /* Section Activité */
 
