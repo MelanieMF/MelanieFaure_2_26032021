@@ -16,20 +16,20 @@
 </head>
 
   <!---------- Corps du site ---------->
-  <body>
-    <!---------- Header (logo + menu de navigation) ---------->
-    <header>
-      <img src="images/logo/Reservia.svg" alt="logo de Reservia"/>
-        <nav>
-          <ul>
-            <li><a class="navhbgt" href="#hebergements">Hébergements</a></li>
-            <li><a class="navacte" href="#activites">Activités</a></li>  
-            <a class="navsubs" href="#">S'inscrire</a>
-          </ul>
-        </nav>
-    </header>
-
-  <!---------- Section Recherche et Filtres ---------->
+<body>
+  <!---------- Header (logo + menu de navigation) ---------->
+  <header>
+    <img src="images/logo/Reservia.svg" alt="logo de Reservia"/>
+      <nav>
+        <ul>
+          <li><a class="navhbgt" href="#hebergements">Hébergements</a></li>
+          <li><a class="navacte" href="#activites">Activités</a></li>  
+          <a class="navsubs" href="#">S'inscrire</a>
+        </ul>
+      </nav>
+  </header>
+    
+  <!---------- Section 1: titre et barre de recherche ---------->
   <section class="searchbarsection">
     <h1 class="searchfilterssectiontitle">Trouvez votre hébergement pour des vacances de rêve</h1>
     <p>En plein centre ville ou en pleine nature</p>
@@ -37,6 +37,8 @@
         <form method="post" action="traitement.php"><i class="fas fa-map-marker-alt"></i><input type="search" placeholder="Marseille, France" /><a href="#" class="bouton_search">Rechercher</a><a href="#" class="btnsearch_mobile"><i class="fas fa-search"></i></a></form>
     </div>
   </section>
+
+  <!---------- Section 2: Filtres ---------->
   <section class="filterscategory">
     <h3 class="filterscategorytitle">Filtres</h3>
       <ul>
@@ -66,12 +68,15 @@
         </li>
       </ul>
   </section>
+  <!---------- Section 3: info nombres logements ---------->
   <section class="infoaccomodations">
     <div><i class="fas fa-info"></i></div>
     <p> Plus de 500 logements sont disponibles dans cette ville </p>
   </section>
+
+  <!---------- Main regroupant section hébergements + aside ---------->
   <main class="mainsection">
-    <!---------- Section 4: hébergements gauche ---------->
+  <!---------- Section 4: hébergements gauche ---------->
     <section id="hebergements" class="accomodationsection">
       <h2 class="accomodationsection_title">Hébergements à Marseille</h2>
         <div class="accomodationcardsgroup">
@@ -236,8 +241,6 @@
         </div>
       </div>
   </section>
-
-  <!---------- Footer ---------->
   <footer>
     <section class="infofooter">
       <ul>
@@ -262,6 +265,5 @@
       </ul>
     </section>
   </footer>
-
 </body>
 </html>
