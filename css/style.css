@@ -449,3 +449,543 @@ footer li {
 footer a:hover {
     text-decoration: underline;
 }
+
+
+/******************** Reponsive Media Queries ********************/
+/* Références
+- Petits et moyens écrans mobiles (max-width 767px)
+- Grands écrans mobiles (min-width: 768px) and (max-width: 1023px)
+- Grands écrans tablettes et écran PC (min-width: 1024px) and (max-width: 1339px)
+- Grands écrans (min-width: 1440px et max-width 2559px) 
+- Très grands écrans (min-width 2560px */
+/******************** Reponsive Media Queries ********************/
+
+/* Très grands écrans (min-width 2560px) */
+
+@media screen and (min-width: 2560px)
+
+{
+    body {
+        font-size: 1.3em;
+        overflow-x: hidden;
+    }
+
+    header {
+        font-size: 1.2em;
+    }
+
+    .searchbarsection h1 {
+        font-size: 1.6em;
+    }
+
+    .fa-map-marker-alt {
+        padding: 14px;
+    }
+
+    input {
+        padding: 15px;
+        width: 13%;
+        border: 2px solid #EAEAEA;
+    }
+
+    ::placeholder {
+        font-size: 1.5em;
+    }
+
+    .bouton_search {
+        padding: 10px 15px 12px 15px;
+    }
+
+    .searchbarsection p {
+        font-size: 1.3em;
+    }
+
+    section {
+        width: 100%;
+    }
+
+    .accomodationsection {
+        min-width: 1300px;
+    }
+
+    .accomodationcardsgroup {
+        width: 1300px;
+    }
+
+    .cards {
+        min-width: 400px;
+        height: 250px;
+    }
+
+    .cards img {
+        height: 150px;
+    }
+
+    aside {
+        margin-left: 100px;
+    }
+
+    .asidecardsarticle {
+        height: 170px;
+    }
+
+    .btnsearch_mobile {
+        display: none;
+    }
+
+    .activitycards {
+        width: 100%;
+        max-width: 500px;
+    }
+    
+    .activitycards img {
+        width: 100%;
+        max-width: 500px;
+    }
+    
+    .activitysection_title {
+        font-size: 1.4em;
+        margin: 40px 0 20px 140px;
+    }
+        
+    .vieux_port {
+        height: 800px;
+        width: 500px;
+    }
+    
+    .vieux_port img {
+        height: 740px;
+        width: 500px;
+    }
+    
+    .pomegues {
+        height: 400px;
+        width: 500px;
+        margin-left: 10px;
+    }
+    
+    .pomegues img {
+        height: 360px;
+        width: 500px;
+    }
+    
+    .frioult {
+        height: 350px;
+        width: 500px;
+        margin-left: 10px;
+    }
+    
+    .frioult img {
+        height: 300px;
+        width: 500px;
+    }
+    
+    .calanques {
+        height: 800px;
+        width: 500px;
+        margin-left: 10px;
+    }
+    
+    .calanques img {
+        height: 740px;
+        width: 500px;
+    }
+    
+    .notredame {    
+        height: 375px;
+        width: 500px;
+        margin-left: 20px;
+    }
+    
+    .notredame img {
+        height: 325px;
+        width: 500px;
+    }
+    
+    .longchamp {
+        height: 375px;
+        width: 500px;
+        margin-left: 20px;
+    }
+    
+    .longchamp img {
+        height: 325px;
+        width: 500px;
+    }
+}
+
+
+
+/****************************************/
+/****************************************/
+/* Grands écrans (min-width: 1440px and max-width 2559px) */
+/****************************************/
+/****************************************/
+@media screen and (min-width: 1440px) and (max-width: 2559px)
+{
+    .btnsearch_mobile {
+        display: none;
+    }
+}
+
+
+/* Grand écran tablettes et écran PC (min-width: 1024px) and (max-width: 1339px) */
+@media screen and (min-width: 1024px) and (max-width: 1339px)
+{
+    main {
+        width: 100%;
+        margin-left: 50px;
+    }
+
+    aside {
+        width: 100%;
+    }
+
+    .btnsearch_mobile {
+        display: none;
+    }
+
+    .activitysection_title {
+        margin-left: 60px;
+    }
+
+    .activitysection {
+        margin-left: 80px;
+    }
+
+    .activitycardsgroup {
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+        width: 100%;
+    }
+
+    .calanques {
+        margin-left: 0px;
+    }
+}
+
+/****************************************/
+/****************************************/
+/* Grands écrans mobiles et tablettes (min-width: 768px) and (max-width: 1023px) */
+/****************************************/
+/****************************************/
+
+@media screen and (min-width: 768px) and (max-width: 1023px)
+{
+    body
+    {
+        font-size: 0.9em;
+    }   
+
+    /* Section barre de recherche */
+    .searchbarsection {
+        font-size: 0.8em;
+    }
+
+    .btnsearch_mobile {
+        display: none;
+    }
+
+    /* Section filtres */
+
+    .filterscategory {
+        margin-left: 60px;
+    }
+
+    .filterscategory ul {
+        flex-wrap: wrap;
+    }
+
+    /* Main */
+    main {
+        width: 100%;
+        flex-flow: column-reverse wrap;
+        margin-left: 0;
+        
+    }
+
+    /* Hébergements */
+    .accomodationcardsgroup article {
+        margin-bottom: 30px;
+    }
+
+    /* Aside */ 
+    aside {
+        width: 100%;
+        margin-left: 0;
+    }
+
+    .asidecards {
+        width: 45%;
+
+    }
+
+    .asidecards article {
+        height: 140px;
+        min-width: 280px;
+        margin: 0 20px 10px 0;
+    }
+        
+    .asidegroupcards {
+        border-radius: 0;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+    }
+  
+    .asidecards_title {
+        margin: 10px;
+        font-size: 0.9em;
+    }
+  
+    .fa-lg {
+        margin-right: 10px;
+        font-size: 0.9em;
+    }
+  
+    /* Activité */
+
+    .activitysection_title {
+        margin-left: 10px;
+    }
+
+    .activitysection {
+        justify-content: center;
+    }
+
+    .activitycardsgroup {
+        flex-wrap: wrap;
+        justify-content: space-around;
+        width: 100%;
+    }
+
+    .calanques {
+        margin-left: 0px;
+    }
+
+    /* footer */
+
+    footer {
+        width: 100%;
+        margin: 0;
+    }
+
+    footer li {
+        margin: 0;
+        }
+    }
+
+/****************************************/
+/****************************************/
+/* Petits et moyens écrans mobiles (max-width 767px) */
+/****************************************/
+/****************************************/
+
+@media screen and (max-width: 767px) {   
+
+    body
+    {
+        box-sizing: border-box;
+        overflow-x: hidden;
+        width: 100%;
+        margin: 0;
+    }
+  
+    /* Header */
+    header {
+        width: 98%;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+  
+    nav ul {
+        padding: 0;
+        margin: 0;
+        border-bottom: 2px solid #F2F2F2;
+    }
+  
+    nav li {
+        padding: 10px 35px 10px 35px;
+        font-size: 0.9em;
+        margin: 0;
+    }
+    
+    .navsubs {
+        position: absolute;
+        top: 15px;
+        right: 10px;
+        font-size: 0.9em;
+        font-weight: bold;
+    }
+    
+    /* Header/ Animations du menu de navigation */
+    .navhbgt:hover, .navacte:hover {
+        border-top: none;
+        border-bottom: 1px solid #0065FC;
+    }
+  
+    nav li:hover {
+        border-bottom: solid 2px #0065FC;
+    }
+  
+    /* Section barre de recherche */
+    .searchbarsection {
+        width: 98%;
+    }
+
+    .searchbarsection h1 {
+        font-size: 1.2em;
+    }
+  
+    .searchbarsection p {
+        font-size: 0.9em;
+    }
+  
+    input {
+        width: 70%;
+    }
+  
+    .bouton_search {
+        display: none;
+    }
+  
+    .btnsearch_mobile {
+        padding: 8px 12px 8px 12px;
+    }
+  
+    /* Boutons filtres */
+  
+    .filterscategory {
+        width: 98%;
+        flex-direction: column;
+    }
+  
+    .filterscategory ul {
+        flex-wrap: wrap;
+        padding-left: 0;
+    }
+  
+    .filterscategory li {
+        margin: 10px 15px 10px 0;
+    }
+  
+    .filterscategory h3 {
+        padding: 0;
+        margin: 0 0 5px 0;
+    }
+  
+    .filters p {
+        padding: 3px 15px 0px 10px;
+    }
+  
+    /* Section info logements */
+    .fa-info {
+        margin-left: -20px; }
+  
+    .infoaccomodations p
+    {
+        font-size: 0.9em;
+    }
+  
+    /* Main hébergements + aside*/
+    .mainsection {
+        width: auto;
+        margin-left: -25px;
+        flex-direction: column-reverse;
+        font-size: 0.9em;
+    }
+  
+    /* Sectionhébergements */
+  
+    .accomodationsection_title {
+        font-size: 1.2em;
+        margin: 20px 20px 20px 30px;
+    }
+  
+    .accomodationsection {
+        background-color: #FFFFFF;
+        width: 90%;
+    }
+  
+    /********** Adaptation des cartes **********/
+
+    .accomodationcardsgroup {
+        width: 110%;
+    }
+    .accomodationcardsgroup article {   
+        margin: 0 0 30px 20px;
+        min-width: 300px;
+        height: 220px;
+    }
+
+    .accomodationcardsgroup article img {
+        height: 160px;
+    }
+  
+    /* Aside / les plus populaires */
+  
+    aside {
+        width: 98%;
+        margin: 0;
+        border-radius: 0; 
+    }
+  
+    .titleaside {
+        margin: 10px;
+        font-size: 0.9em;
+    }
+  
+    .fa-lg {
+        margin-right: 10px;
+        font-size: 0.9em;
+    }
+  
+    .asidecards article {
+        height: 140px;
+        min-width: 280px;
+        margin-bottom: 10px;
+    }
+  
+  
+    /* Section activités */
+    .activitysection_title {
+        font-size: 1.2em;
+        margin: 20px 0px 20px 0px;
+    }
+  
+    .activitycardsgroup {
+        width: 98%;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .vieux_port, .pomegues, .frioult, .calanques, .notredame, .longchamp {
+        width: 310px;
+        height: 220px;
+        margin: 10px 0px 10px 0px;
+    }
+  
+    .vieux_port img, .pomegues img, .frioult img, .calanques img,.longchamp img {
+        height: 180px;
+    }
+
+    .calanques
+    {
+        margin-left: 0px;
+    }
+  
+    /* Footer */
+  
+    footer
+    {   width: 98%;
+        display: flex;
+        flex-direction: column;
+    }
+  
+    footer li
+    {
+        margin: 0 30px 10px -40px;
+    }
+  }
