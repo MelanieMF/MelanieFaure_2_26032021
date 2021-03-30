@@ -47,7 +47,7 @@ nav li {
 /********** Header/ Animations du menu de navigation **********/
 .navacte:hover, .navhbgt:hover {
     border-top: 3px solid #0065FC;
-    padding-top: 40px;
+    padding-top: 42px;
 }
 
 /********** Section 1: titre et barre de recherche **********/
@@ -156,9 +156,8 @@ input {
     padding: 15px 17px 15px 17px;
 }
 
-/********** Section 3: info nombres logements **********/
+/********** Info nombres logements **********/
 
-/********** Éléments de la section **********/
 .infoaccomodations {
     display: flex;
     margin: auto;
@@ -198,7 +197,7 @@ main {
     display: flex;
     margin: auto;
 }
-/********** Section 4: hébergements gauche **********/
+/********** Section 3: hébergements gauche **********/
 .accomodationsection {
     max-width: 900px;
     background-color: #F1f1f1;
@@ -275,7 +274,7 @@ article p {
     margin-left: 30px;
 }
 
-/********** Section 5 hébergements les plus populaires (aside) **********/
+/********** Aside / hébergements les plus populaires **********/
 
 aside {
     background-color: #F1f1f1;
@@ -336,7 +335,7 @@ aside {
     margin-top: 50px;
 }
 
-/********** Section 6 activités **********/
+/********** Section 4 activités **********/
 .activitycardsgroup {
     display: flex; 
     margin: auto;
@@ -462,7 +461,6 @@ footer a:hover {
 
 
 /* Très grands écrans (min-width 2560px) */
-
 @media screen and (min-width: 2560px)
 
 {
@@ -471,10 +469,20 @@ footer a:hover {
         overflow-x: hidden;
     }
 
-    header {
-        font-size: 1.2em;
+    /* Header */
+    header nav li {
+        font-size: 1.35em;
     }
 
+    header img {
+        width: 9%;
+    }
+
+    .navsubs {
+        font-size: 1.35em;
+    }
+
+    /* Section Filtres + boutons de recherche */
     .searchbarsection h1 {
         font-size: 1.6em;
     }
@@ -497,10 +505,23 @@ footer a:hover {
         padding: 10px 15px 12px 15px;
     }
 
-    .searchbarsection p {
-        font-size: 1.3em;
+    .btnsearch_mobile {
+        display: none;
     }
 
+    .searchbarsection h1 {
+        font-size: 1.8em;
+    }
+
+    .searchbarsection p {
+        font-size: 1.5em;
+    }
+
+    .filters p {
+        font-size: 1.2em;
+    }
+
+    /* Section hébergement + aside */
     section {
         width: 100%;
     }
@@ -530,10 +551,7 @@ footer a:hover {
         height: 170px;
     }
 
-    .btnsearch_mobile {
-        display: none;
-    }
-
+    /* Section activité */
     .activitycards {
         width: 100%;
         max-width: 500px;
@@ -615,9 +633,9 @@ footer a:hover {
     }
 }
 
+
+
 /* Grands écrans (min-width: 1440px and max-width: 2559px) */
-
-
 @media screen and (min-width: 1440px) and (max-width: 2559px)
 {
     .btnsearch_mobile {
@@ -670,19 +688,15 @@ footer a:hover {
     }
 }
 
+
+
 /* Grands écrans mobiles et tablettes (min-width: 768px) and (max-width: 1023px) */
-
-
 @media screen and (min-width: 768px) and (max-width: 1023px)
 {
     body
     {
         font-size: 0.9em;
     }   
-
-    header {
-        border: solid 1px blue;
-    }
 
     /* Section barre de recherche */
     .searchbarsection {
@@ -766,7 +780,6 @@ footer a:hover {
         flex-wrap: wrap;
         justify-content: space-around;
         width: 100%;
-        border: solid 1px black;
     }
 
     .calanques {
@@ -777,19 +790,17 @@ footer a:hover {
     footer {
         width: 100%;
         margin: 0;
-        border: 1px solid sienna;
     }
 
     footer li {
         margin: 0;
-        border: solid 1px lightcoral;
         }
 
     }
 
+
+
 /* Petits et moyens écrans mobiles (max-width 767px) */
-
-
 @media screen and (max-width: 767px) {   
 
     body {
@@ -803,7 +814,6 @@ footer a:hover {
         width: 98%;
         flex-direction: column;
         align-items: flex-start;
-        border: solid 1px blue;
     }
 
     header img {
@@ -815,14 +825,12 @@ footer a:hover {
         padding: 0;
         margin: 10px -5px;
         border-bottom: 2px solid #F2F2F2;
-        border: solid 1px green;
     }
 
     nav li {
         padding: 10px 30px 10px 25px;
         font-size: 0.9em;
         margin: 10px;
-        border: solid 1px orange;
     }
     
     .navsubs {
@@ -831,7 +839,6 @@ footer a:hover {
         right: 35px;
         font-size: 0.9em;
         font-weight: bold;
-        border: solid 1px salmon;
     }
     
     /* Header/ Animations du menu de navigation */
@@ -846,7 +853,6 @@ footer a:hover {
   
     /* Section barre de recherche */
     .searchbarsection {
-        border: solid 1px red;
         width: 98%;
     }
 
@@ -880,20 +886,17 @@ footer a:hover {
     /* Boutons filtres */
     .filterscategory {
         width: 98%;
-        flex-direction: column; 
-        border: solid 1px mediumpurple;
+        flex-direction: column;
     }
   
     .filterscategory ul {
         flex-wrap: wrap;
         padding-left: 10px;
-        border: solid 1px yellow;
     }
   
     .filterscategory li {
         margin: 10px 15px 10px 0; 
-        padding: -10px 0 -10px 0;  
-        border: solid 1px orangered;
+        padding: -10px 0 -10px 0;
     }
   
     .filterscategory h3 {
@@ -903,7 +906,6 @@ footer a:hover {
   
     .filters {
         padding: -10px;
-        border: solid 1px blueviolet;
     }
   
     /* Section info logements */
@@ -942,14 +944,14 @@ footer a:hover {
 
     .accomodationcardsgroup article img {
         height: 160px;
-        border: solid 1px rebeccapurple;
     }
   
     /* Aside / les plus populaires */
     aside {
+        width: 100%;
         margin: 0;
-        border-radius: 0; 
-        border: solid 1px brown;
+        padding: 5px;
+        border-radius: 0;
     }
   
     .titleaside {
@@ -966,7 +968,6 @@ footer a:hover {
         height: 140px;
         min-width: 280px;
         margin-bottom: 10px;
-        border: solid 1px blueviolet;
     }
 
     .displaymore {
@@ -977,15 +978,13 @@ footer a:hover {
     .activitysection_title {
         font-size: 1.2em;
         margin: 20px 0px 20px 10px;
-        border: solid 1px midnightblue;
     }
   
     .activitycardsgroup {
-        width: 99%;
+        width: 100%;
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        border: solid 1px mediumspringgreen;
     }
 
     .vieux_port, .pomegues, .frioult, .calanques, .notredame, .longchamp {
@@ -1009,12 +1008,10 @@ footer a:hover {
         display: flex;
         flex-direction: column;
         padding: 10px;
-        border: solid 1px mediumvioletred;
     }
   
     footer li
     {
         margin: 0 30px 0 -40px;
-        border: solid 1px lightcoral;
     }
   }
