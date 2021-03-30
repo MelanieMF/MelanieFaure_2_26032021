@@ -25,6 +25,7 @@ header {
     width: 85%;
     display: flex;
     justify-content: space-between;
+    padding-top: 20px;
 }
 
 /********** Header/menu de navigation **********/
@@ -34,19 +35,19 @@ nav ul {
 
 nav li {
     margin-right: 80px;
-    font-size: 1.1em;
+    font-size: 1em;
 }
 
 .navsubs {
     color: #0065FC;
     font-weight: bold;
-    font-size: 1.1em;
+    font-size: 1em;
 }
 
 /********** Header/ Animations du menu de navigation **********/
 .navacte:hover, .navhbgt:hover {
     border-top: 3px solid #0065FC;
-    padding-top: 25px;
+    padding-top: 40px;
 }
 
 /********** Section 1: titre et barre de recherche **********/
@@ -60,13 +61,13 @@ nav li {
 
 /********** Barre de recherche **********/
 .fa-map-marker-alt {
-    padding: 10.5px;
+    padding: 11px;
     background-color: #EAEAEA;
     border-radius: 8px 0 0 8px;
 }
 
 input {
-    padding: 10px;
+    padding: 11px 0 10.5px 10px;
     border: 1px solid #EAEAEA;
     margin-right: -4px;
 }
@@ -80,11 +81,11 @@ input {
 .bouton_search, .btnsearch_mobile {
     color: #FFFFFF;
     font-weight: bold;
-    padding: 9px 13px 8px 13px;
+    padding: 9px 11px 8px 13px;
     border-radius: 0 8px 8px 0;
-    background-color: #3498DB;
-    border-bottom: 2px solid #0065FC;
-    text-shadow: 0px -2px #0065FC;
+    background-color: #0065fc;
+    border-bottom: 2px solid #0362f0;
+    text-shadow: 0px -2px #0362f0;
     transition: all 0.1s;
     -webkit-transition: all 0.1s;
 }
@@ -450,15 +451,15 @@ footer a:hover {
     text-decoration: underline;
 }
 
-
 /******************** Reponsive Media Queries ********************/
 /* Références
 - Petits et moyens écrans mobiles (max-width 767px)
 - Grands écrans mobiles (min-width: 768px) and (max-width: 1023px)
 - Grands écrans tablettes et écran PC (min-width: 1024px) and (max-width: 1339px)
-- Grands écrans (min-width: 1440px et max-width 2559px) 
-- Très grands écrans (min-width 2560px */
+- Grands écrans (min-width: 1440px and max-width: 2559px) 
+- Très grands écrans (min-width 2560px) */
 /******************** Reponsive Media Queries ********************/
+
 
 /* Très grands écrans (min-width 2560px) */
 
@@ -512,12 +513,12 @@ footer a:hover {
         width: 1300px;
     }
 
-    .cards {
+    .accomodationcardsgroup article {
         min-width: 400px;
         height: 250px;
     }
 
-    .cards img {
+    .accomodationcardsgroup article img {
         height: 150px;
     }
 
@@ -545,7 +546,7 @@ footer a:hover {
     
     .activitysection_title {
         font-size: 1.4em;
-        margin: 40px 0 20px 140px;
+        margin: 40px 0 20px 200px;
     }
         
     .vieux_port {
@@ -614,13 +615,9 @@ footer a:hover {
     }
 }
 
+/* Grands écrans (min-width: 1440px and max-width: 2559px) */
 
 
-/****************************************/
-/****************************************/
-/* Grands écrans (min-width: 1440px and max-width 2559px) */
-/****************************************/
-/****************************************/
 @media screen and (min-width: 1440px) and (max-width: 2559px)
 {
     .btnsearch_mobile {
@@ -635,6 +632,10 @@ footer a:hover {
     main {
         width: 100%;
         margin-left: 50px;
+    }
+
+    .filters p {
+        padding: 0 10px 0 0;
     }
 
     aside {
@@ -662,13 +663,15 @@ footer a:hover {
     .calanques {
         margin-left: 0px;
     }
+
+    footer li {
+        margin-left: 20px;
+        margin-right: 80px;
+    }
 }
 
-/****************************************/
-/****************************************/
 /* Grands écrans mobiles et tablettes (min-width: 768px) and (max-width: 1023px) */
-/****************************************/
-/****************************************/
+
 
 @media screen and (min-width: 768px) and (max-width: 1023px)
 {
@@ -676,6 +679,10 @@ footer a:hover {
     {
         font-size: 0.9em;
     }   
+
+    header {
+        border: solid 1px blue;
+    }
 
     /* Section barre de recherche */
     .searchbarsection {
@@ -687,13 +694,16 @@ footer a:hover {
     }
 
     /* Section filtres */
-
     .filterscategory {
         margin-left: 60px;
     }
 
     .filterscategory ul {
         flex-wrap: wrap;
+    }
+
+    .filters {
+        margin-bottom: 10px;
     }
 
     /* Main */
@@ -717,7 +727,6 @@ footer a:hover {
 
     .asidecards {
         width: 45%;
-
     }
 
     .asidecards article {
@@ -745,7 +754,6 @@ footer a:hover {
     }
   
     /* Activité */
-
     .activitysection_title {
         margin-left: 10px;
     }
@@ -758,6 +766,7 @@ footer a:hover {
         flex-wrap: wrap;
         justify-content: space-around;
         width: 100%;
+        border: solid 1px black;
     }
 
     .calanques {
@@ -765,31 +774,28 @@ footer a:hover {
     }
 
     /* footer */
-
     footer {
         width: 100%;
         margin: 0;
+        border: 1px solid sienna;
     }
 
     footer li {
         margin: 0;
+        border: solid 1px lightcoral;
         }
+
     }
 
-/****************************************/
-/****************************************/
 /* Petits et moyens écrans mobiles (max-width 767px) */
-/****************************************/
-/****************************************/
+
 
 @media screen and (max-width: 767px) {   
 
-    body
-    {
-        box-sizing: border-box;
-        overflow-x: hidden;
+    body {
         width: 100%;
         margin: 0;
+        overflow-x: hidden;
     }
   
     /* Header */
@@ -797,26 +803,35 @@ footer a:hover {
         width: 98%;
         flex-direction: column;
         align-items: flex-start;
+        border: solid 1px blue;
     }
-  
+
+    header img {
+        width: 30%;
+        margin-left: 10px;
+    }
+    
     nav ul {
         padding: 0;
-        margin: 0;
+        margin: 10px -5px;
         border-bottom: 2px solid #F2F2F2;
+        border: solid 1px green;
     }
-  
+
     nav li {
-        padding: 10px 35px 10px 35px;
+        padding: 10px 30px 10px 25px;
         font-size: 0.9em;
-        margin: 0;
+        margin: 10px;
+        border: solid 1px orange;
     }
     
     .navsubs {
         position: absolute;
-        top: 15px;
-        right: 10px;
+        top: 40px;
+        right: 35px;
         font-size: 0.9em;
         font-weight: bold;
+        border: solid 1px salmon;
     }
     
     /* Header/ Animations du menu de navigation */
@@ -831,17 +846,24 @@ footer a:hover {
   
     /* Section barre de recherche */
     .searchbarsection {
+        border: solid 1px red;
         width: 98%;
     }
 
     .searchbarsection h1 {
         font-size: 1.2em;
-    }
+        padding: 3px 10px 0 10px;
+        }
   
     .searchbarsection p {
         font-size: 0.9em;
+        padding: 3px 10px 0 10px;
     }
-  
+
+    .searchbar {
+        padding: 3px 10px 0 10px;
+    }
+
     input {
         width: 70%;
     }
@@ -852,31 +874,36 @@ footer a:hover {
   
     .btnsearch_mobile {
         padding: 8px 12px 8px 12px;
+        border-radius: 8px;
     }
   
     /* Boutons filtres */
-  
     .filterscategory {
         width: 98%;
-        flex-direction: column;
+        flex-direction: column; 
+        border: solid 1px mediumpurple;
     }
   
     .filterscategory ul {
         flex-wrap: wrap;
-        padding-left: 0;
+        padding-left: 10px;
+        border: solid 1px yellow;
     }
   
     .filterscategory li {
-        margin: 10px 15px 10px 0;
+        margin: 10px 15px 10px 0; 
+        padding: -10px 0 -10px 0;  
+        border: solid 1px orangered;
     }
   
     .filterscategory h3 {
-        padding: 0;
-        margin: 0 0 5px 0;
+        padding: 10px;
+        margin: 0 0 -10px 0;
     }
   
-    .filters p {
-        padding: 3px 15px 0px 10px;
+    .filters {
+        padding: -10px;
+        border: solid 1px blueviolet;
     }
   
     /* Section info logements */
@@ -888,47 +915,41 @@ footer a:hover {
         font-size: 0.9em;
     }
   
-    /* Main hébergements + aside*/
+    /* Main hébergements + aside */
     .mainsection {
-        width: auto;
-        margin-left: -25px;
+        width: 100%;
         flex-direction: column-reverse;
         font-size: 0.9em;
     }
   
-    /* Sectionhébergements */
-  
+    /* Section hébergements */
     .accomodationsection_title {
         font-size: 1.2em;
-        margin: 20px 20px 20px 30px;
+        margin: 20px 0px 20px 10px;
     }
   
     .accomodationsection {
         background-color: #FFFFFF;
-        width: 90%;
+        width: 95%;
     }
   
-    /********** Adaptation des cartes **********/
-
-    .accomodationcardsgroup {
-        width: 110%;
-    }
+    /* Adaptation des cartes */
     .accomodationcardsgroup article {   
-        margin: 0 0 30px 20px;
+        margin: 0 0 30px 15px;
         min-width: 300px;
         height: 220px;
     }
 
     .accomodationcardsgroup article img {
         height: 160px;
+        border: solid 1px rebeccapurple;
     }
   
     /* Aside / les plus populaires */
-  
     aside {
-        width: 98%;
         margin: 0;
         border-radius: 0; 
+        border: solid 1px brown;
     }
   
     .titleaside {
@@ -945,26 +966,32 @@ footer a:hover {
         height: 140px;
         min-width: 280px;
         margin-bottom: 10px;
+        border: solid 1px blueviolet;
     }
-  
+
+    .displaymore {
+        margin-top: 0px;
+    }
   
     /* Section activités */
     .activitysection_title {
         font-size: 1.2em;
-        margin: 20px 0px 20px 0px;
+        margin: 20px 0px 20px 10px;
+        border: solid 1px midnightblue;
     }
   
     .activitycardsgroup {
-        width: 98%;
+        width: 99%;
         flex-direction: column;
         justify-content: center;
         align-items: center;
+        border: solid 1px mediumspringgreen;
     }
 
     .vieux_port, .pomegues, .frioult, .calanques, .notredame, .longchamp {
-        width: 310px;
+        width: 100%;
         height: 220px;
-        margin: 10px 0px 10px 0px;
+        margin: 10px 0px 20px 0px;
     }
   
     .vieux_port img, .pomegues img, .frioult img, .calanques img,.longchamp img {
@@ -977,15 +1004,17 @@ footer a:hover {
     }
   
     /* Footer */
-  
     footer
-    {   width: 98%;
+    {   width: 93%;
         display: flex;
         flex-direction: column;
+        padding: 10px;
+        border: solid 1px mediumvioletred;
     }
   
     footer li
     {
-        margin: 0 30px 10px -40px;
+        margin: 0 30px 0 -40px;
+        border: solid 1px lightcoral;
     }
   }
