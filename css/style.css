@@ -209,7 +209,7 @@ main {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
-    padding: 0;*
+    padding: 0;
 }
 
 .accomodationsection_title {
@@ -688,6 +688,10 @@ footer a:hover {
         width: 100%;
     }
 
+    .asidestardown {
+        margin-top: 40px;
+    }
+
     /* Activités */
     .activitysection_title {
         margin-left: 60px;
@@ -841,7 +845,7 @@ footer a:hover {
         margin: 0;
     }
 
-    }
+}
 
 
 
@@ -946,7 +950,7 @@ footer a:hover {
   
     .filterscategory li {
         margin: 10px 15px 10px 0; 
-        padding: -10px 0 -10px 0;
+        padding: 0;
     }
   
     .filterscategory h3 {
@@ -955,7 +959,7 @@ footer a:hover {
     }
   
     .filters {
-        padding: -10px;
+        padding: 0;
     }
   
     /* Section info logements */
@@ -1018,6 +1022,10 @@ footer a:hover {
         height: 140px;
         min-width: 280px;
         margin-bottom: 10px;
+    }
+
+    .asidestardown {
+        margin-top: 40px;
     }
 
     .displaymore {
