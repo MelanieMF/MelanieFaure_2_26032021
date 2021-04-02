@@ -453,10 +453,10 @@ footer a:hover {
 /******************** Reponsive Media Queries ********************/
 /* Références
 - Petits et moyens écrans mobiles (max-width 767px)
-- Grands écrans mobiles (min-width: 768px) and (max-width: 1023px)
-- Grands écrans tablettes et écran PC (min-width: 1024px) and (max-width: 1339px)
-- Grands écrans (min-width: 1440px and max-width: 2559px) 
-- Très grands écrans (min-width 2560px) */
+- Grands écrans mobiles ou tablettes (min-width: 768px) and (max-width: 1023px)
+- Grands écrans tablettes et écrans PC (min-width: 1024px) and (max-width: 1339px)
+- Grands écrans PC (min-width: 1440px and max-width: 2559px) 
+- Très grands écrans (Télé) (min-width 2560px) */
 /******************** Reponsive Media Queries ********************/
 
 
@@ -641,6 +641,10 @@ footer a:hover {
     .btnsearch_mobile {
         display: none;
     }
+
+    .asidestardown {
+        margin-top: 40px;
+    }
 }
 
 
@@ -653,12 +657,13 @@ footer a:hover {
 
     /* Header */
     header {
+        width: 100%;
         margin-left: 20px;
     }
 
     /* Section barre de recherche */
     .searchbarsection {
-    margin-left: 20px;
+    margin-left: 40px;
     }
 
     .btnsearch_mobile {
@@ -667,7 +672,7 @@ footer a:hover {
 
     /* Filtres */
     .filterscategory {
-        margin-left: 20px;
+        margin-left: 40px;
     }
 
     .filters p {
@@ -725,12 +730,13 @@ footer a:hover {
 {
     body
     {
-        width: 98%;
+        width: 100%;
         font-size: 0.9em;
         overflow-x: hidden;
     }   
 
     header {
+        width: 98%;
         margin-left: 20px;
     }
 
@@ -767,7 +773,7 @@ footer a:hover {
 
     /* Main */
     main {
-        width: 98%;
+        width: 100%;
         flex-flow: column-reverse wrap;
         margin-left: -7px; 
     }
@@ -783,7 +789,7 @@ footer a:hover {
 
     /* Aside */ 
     aside {
-        width: 98%;
+        width: 100%;
         margin-left: 0;
         border-radius: 0;
     }
@@ -826,9 +832,9 @@ footer a:hover {
     }
 
     .activitycardsgroup {
+        width: 100%;
         flex-wrap: wrap;
         justify-content: space-around;
-        width: 100%;
     }
 
     .calanques {
@@ -887,7 +893,7 @@ footer a:hover {
         margin-right: 0;
         text-decoration: none;
     }
-    
+
     .navsubs {
         position: absolute;
         top: 40px;
@@ -1039,7 +1045,7 @@ footer a:hover {
     }
   
     .activitycardsgroup {
-        width: 100%;
+        width: 90%;
         flex-direction: column;
         justify-content: center;
         align-items: center;
